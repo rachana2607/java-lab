@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+		<category>
+      <pattern>*</pattern>
+      <template>Oh  I dont understand you.Ask again</template>
+  </category>
+  <category>
+      <pattern>My name is *</pattern>
+      <template> Hello <star/></template>
+  </category>
+  <category>
+  </category>
+  <category>
+      <pattern>Hi</pattern>
+      <template>Hello!I am CHAN. 
+      Glad to meet you.
+      When you greet me HELLO or GOODBYE please mention my name. 
+  I can talk about 1. Artificial Intelligence 2. MACHINE lEARNING.
+ To know something about them say the name of the subject.
+ What is your name  
+ </template>
+
+  </category>
+  
+  <category>
+      <pattern>Artificial Intelligence</pattern>
+  <template>Artificial intelligence (AI) makes it possible for machines to learn from experience, adjust to new inputs and perform human-like tasks. 
+  <button>
+	    <text>ARTIFICIAL INTELLIGENCE</text>
+	    <url>https://en.wikipedia.org/wiki/Artificial_intelligence</url>
+    </button>
+
+  </template>
+  </category>
+  <category>
+      <pattern>Machine learning</pattern>
+  <template>
+  Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.
+  <button>
+	    <text>MACHINE LEARNING</text>
+	    <url>https://en.wikipedia.org/wiki/Machine_learning</url>
+    </button>
+  </template>
+  </category>
+  
+  
+  <category>
+      <pattern>AIML</pattern>
+      <template>It is a scripting language</template>
+  </category>
+  <category>
+      <pattern>HTML</pattern>
+      <template><srai>AIML</srai>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>My name is *</pattern>
+      <template>Heloo <set name="username"><star/>
+      </set>  glad to meet you.</template> 
+  </category>
+  <category>
+      <pattern>Good night</pattern>
+      <template> Hi <get name="username"/> Good night sweet dreams</template>
+  </category>
+  
+  <category>
+      <pattern>Who is albert</pattern>
+      <template>Albert is a boy</template>
+  </category>
+  <category> 
+  <pattern>who is rita</pattern>
+  <template>rita is a girl</template>
+  </category>
+  
+  
+  <category>
+      <pattern>Do you know who * is</pattern>
+      <template><srai>Who is <star/></srai></template>
+  </category>
+  
+  
+  <category>
+      <pattern>lets talk about movies</pattern>
+      <template>do you watch movies</template>
+      </category>
+      
+      <category>
+          <pattern>yes I watch a lot</pattern>
+          <that>do you watch movies</that>
+          <template>Oh great u must be interesting</template>
+      </category>
+    
+    <category>
+        <pattern>i watch few</pattern>
+        <that>do you watch movies</that>
+        <template>lets keep a discussion</template>
+  </category>
+  
+  <category>
+      <pattern>Where is *</pattern>
+      <template><think><set name="state"><star/>
+      </set></think>
+  <condition name="state" value="japan">Japan is beside china</condition>
+  <condition name="state" value="USA"> USA is in thecontinent of America</condition>
+  </template>
+  </category>
+  
+<category>
+      <pattern>* Chan</pattern>
+      <template>
+         <think> <set name="greetings"><star/></set></think>
+  <condition name="greetings" value="Goodbye">
+      <random>
+          <li>HAVE A GOOD TIME <get name="username"/>TAKE CARE</li>
+          <li>NICE TALKING TO U <get name="username"/></li>
+          </random>
+            </condition>
+  <condition name="greetings" value="Hello"> Hi <get name="username"/> Glad  to meet you </condition>
+
+</template>
+  </category>
+  
+ 
+<category>
+	<pattern>WHO IS MAHESH BABU?</pattern>
+	<template>he is movie hero.</template>
+</category>
+
+<category>
+	<pattern>WHO IS MAHESH BABU?</pattern>
+	<template>he is movie hero</template>
+</category>
+
+<category>
+	<pattern>WHO IS MAHESH BABU</pattern>
+	<template>he is hero</template>
+</category>
+
+<category>
+	<pattern>SAY ABOUT TAYLOR SHIFT</pattern>
+	<template>she is a singer</template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW GITAM COLLEGE</pattern>
+	<template>gitam college is located in banglore vizag ang hydrabad which one your asking</template>
+</category>
+
+<category>
+	<pattern>ROSE</pattern>
+	<template>rose is a flower</template>
+</category>
+
+<category>
+	<pattern>WHICH IS YOUR FAVARITE MOVIE</pattern>
+	<template>my favorite movie is KGF</template>
+</category>
+
+<category>
+	<pattern>WHICH IS YOUR FAVIORITE COLOUR</pattern>
+	<template>i like purple colour</template>
+</category>
+
+<category>
+	<pattern>WHICH IS YOUR FAVIORITE COLOUR</pattern>
+	<template>i like purple colour</template>
+</category>
+
+<category>
+	<pattern>WHICH IS YOUR FAVIORITE COLOUR</pattern>
+	<template>purple</template>
+</category>
+
+<category>
+	<pattern>WHICH IS YOUR FAVIORITE COLOUR</pattern>
+	<template>purple</template>
+</category>
+
+<category>
+	<pattern>WHICH COLOUR YOU LIKE THE MOST</pattern>
+	<template>purple</template>
+</category>
+
+<category>
+	<pattern>WHICH COLOUR YOU LIKE THE MOST</pattern>
+	<template>purple</template>
+</category>
+
+</aiml>

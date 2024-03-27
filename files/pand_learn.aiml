@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- insert your AIML categories here -->
+
+<category>
+	<pattern>WHICH DISH YOU LIKE THE MOST IN SOUTH INDIA</pattern>
+	<template>i like bisebelebath</template>
+</category>
+
+<category>
+	<pattern>DO YOU KNOW ABOUT DAVINE</pattern>
+	<template>davine is a  generative AI </template>
+</category>
+
+</aiml>
