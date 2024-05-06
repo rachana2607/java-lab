@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class SimpleGame {
+    public static void main(String args[]) {
+        int a = 1, b = 2;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the choice (a or b): ");
+        char choice = sc.next().charAt(0);
+        if (choice == 'a') {
+            System.out.print("Enter a number to convert: ");
+            int number = sc.nextInt();
+            convertTime(number);
+        } else if (choice == 'b') {
+            System.out.print("Enter a number to calculate the sum of its digits: ");
+            int number = sc.nextInt();
+            calculateSumOfDigits(number);
+        } else {
+            System.out.println("Invalid choice");
+        }
+        sc.close();
+    }
+
+    public static void convertTime(int number) {
+        int hours = number / 3600;
+        int minutes = (number % 3600) / 60;
+        int seconds = number % 60;
+        System.out.println("Time in format (hh:mm:ss): " + hours + ":" + minutes + ":" + seconds);
+    }
+
+    public static void calculateSumOfDigits(int number) {
+        int sum = 0;
+        int originalNumber = number;
+        while (number != 0) {
+            sum += number % 10;
+            number /= 10;
+        }
+        System.out.println("Sum of digits in " + originalNumber + " = " + sum);
+    }
+}
